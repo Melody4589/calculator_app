@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="display">
+            <div id="expressionDisplay"></div>
+            <div id="resultDisplay">0</div>
+        </div>
+        <div class="buttons">
+            <button class="clear" onclick="clearDisplay()">C</button>
+            <button onclick="appendCharacter('/')">/</button>
+            <button onclick="appendCharacter('*')">*</button>
+            <button onclick="appendCharacter('-')">-</button>
+            <button onclick="appendCharacter('+')">+</button>
+            <button onclick="appendCharacter('7')">7</button>
+            <button onclick="appendCharacter('8')">8</button>
+            <button onclick="appendCharacter('9')">9</button>
+            <button onclick="appendCharacter('4')">4</button>
+            <button onclick="appendCharacter('5')">5</button>
+            <button onclick="appendCharacter('6')">6</button>
+            <button onclick="appendCharacter('1')">1</button>
+            <button onclick="appendCharacter('2')">2</button>
+            <button onclick="appendCharacter('3')">3</button>
+            <button onclick="appendCharacter('0')">0</button>
+            <button onclick="appendCharacter('.')">.</button>
+            <button class="equal" onclick="calculate()">=</button>
+
+            <!-- Scientific Buttons -->
+            <button onclick="appendCharacter('(')">(</button>
+            <button onclick="appendCharacter(')')">)</button>
+            <button onclick="appendCharacter('^')">^</button>
+            <button onclick="appendCharacter('sqrt(')">√</button>
+            <button onclick="appendCharacter('log10(')">log</button>
+            <button onclick="appendCharacter('ln(')">ln</button>
+            <button onclick="appendCharacter('e')">e</button>
+            <button onclick="appendCharacter('pi')">π</button>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+
+</html>
